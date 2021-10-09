@@ -19,16 +19,13 @@ const main = async (): Promise<number> => {
       'Templater'
     )
 
-    const res = await copy(Source, Destination, {
+    const { length } = await copy(Source, Destination, {
       overwrite: true,
       dot: true,
       junk: false
     })
 
-    if (res.length > 0) console.log(green(`Copied ${res.length} files`))
-    else console.log(red('No files copied'))
-
-    return res.length
+    return length
   } catch (error) {
     throw error
   }
@@ -36,7 +33,9 @@ const main = async (): Promise<number> => {
 
 main()
   .then(res => {
+    if (res > 0) console.log(green(`Copied ${res} files`))
+    else console.log(red('No files copied'))
+
     console.log(green('✅ Execution complete!'))
-    console.log(res)
   })
   .catch(err => console.error(err))
