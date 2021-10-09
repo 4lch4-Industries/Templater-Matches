@@ -1,0 +1,38 @@
+{
+  "name": "@4lch4-industries/templater-matches",
+  "version": "0.0.1",
+  "description": "A custom Espanso package with matches for working with Obsidian Templater.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "pretty": "prettier --write .",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4lch4-Industries/Templater-Matches.git"
+  },
+  "keywords": [
+    "espanso",
+    "matches"
+  ],
+  "author": {
+    "name": "4lch4",
+    "email": "hey@4lch4.email",
+    "url": "https://alcha.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/4lch4-Industries/Templater-Matches/issues"
+  },
+  "homepage": "https://github.com/4lch4-Industries/Templater-Matches#readme",
+  "dependencies": {
+    "@types/node": "^16.10.3",
+    "chalk": "^4.1.2",
+    "fs-extra": "^10.0.0",
+    "prettier": "^2.4.1",
+    "recursive-copy": "^2.0.13",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
