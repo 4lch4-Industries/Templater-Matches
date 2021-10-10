@@ -10,12 +10,10 @@ jobs:
 
       - name: Hello world action step
         id: hello
-        uses: 4lch4/Espanso-Validator@v0.0.14
-        with:
-          who-to-greet: 'Mona the Octocat'
+        uses: 4lch4/Espanso-Validator@v0.0.15
       # Use the output from the `hello` step
       - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        run: echo "The time was ${{ steps.hello.outputs.timeStart }}"
 
       - name: Get the file count
         run: echo "The time was ${{ steps.hello.outputs.fileCount }}"
