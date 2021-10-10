@@ -1,0 +1,6 @@
+name: templater 
+parent: default
+
+matches:
+  - trigger: ":tpf"
+    replace: "<% $|$ %>"
