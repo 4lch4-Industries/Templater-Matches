@@ -12,7 +12,7 @@ jobs:
 
       - name: Hello world action step
         id: hello
-        uses: 4lch4/Espanso-Validator@v0.0.11
+        uses: 4lch4/Espanso-Validator@v0.0.12
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
