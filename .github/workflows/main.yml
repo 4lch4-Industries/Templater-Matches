@@ -10,7 +10,7 @@ jobs:
 
       - name: Hello world action step
         id: hello
-        uses: 4lch4/Espanso-Validator@v0.0.16
+        uses: 4lch4/Espanso-Validator@v0.0.17
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.timeStart }}"
