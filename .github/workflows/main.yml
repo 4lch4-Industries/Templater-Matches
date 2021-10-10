@@ -1,4 +1,4 @@
-on: [push]
+on: [push, pull_request]
 
 jobs:
   hello_world_job:
@@ -9,12 +9,12 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Hello world action step
-        id: hello
-        uses: 4lch4/Espanso-Validator@v0.0.22
+        id: espanso-validate
+        uses: 4lch4/Espanso-Validator@v0.0.23
 
       # Use the output from the `hello` step
       - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.timeStart }}"
+        run: echo "The time was ${{ steps.hello.espanso-validate.timeStart }}"
 
       - name: Get the file count
-        run: echo "The time was ${{ steps.hello.outputs.fileCount }}"
+        run: echo "The time was ${{ steps.hello.espanso-validate.fileCount }}"
