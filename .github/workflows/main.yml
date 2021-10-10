@@ -10,7 +10,7 @@ jobs:
 
       - name: Hello world action step
         id: espanso-validate
-        uses: 4lch4/Espanso-Validator@v0.0.26
+        uses: 4lch4/Espanso-Validator@v0.0.27
 
       # Use the output from the `hello` step
       - name: Get the output time
