@@ -1,0 +1,9 @@
+name: templater 
+parent: default
+
+matches:
+  - trigger: ":tpf"
+    replace: "<% $|$ %>"
+
+  - trigger: ":tpcurs"
+    replace: "<% tp.file.cursor($|$) %>"
