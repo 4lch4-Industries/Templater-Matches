@@ -1,8 +1,9 @@
-# Simple package
-
-name: simple-package 
+name: templater 
 parent: default
 
 matches:
-  - trigger: ":hw"
-    replace: "hello world"
+  - trigger: ":tpf"
+    replace: "<% $|$ %>"
+
+  - trigger: ":tpcurs"
+    replace: "<% tp.file.cursor($|$) %>"

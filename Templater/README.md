@@ -1,9 +1,12 @@
 ---
-package_name: "simple-package"
-package_title: "Simple Package"
-package_desc: "A simple package to say Hello World."
-package_version: "0.1.0"
-package_author: "Federico Terzi"
-package_repo: "https://github.com/federico-terzi/espanso-package-example"
+package_name: "templater"
+package_title: "Templater"
+package_desc: "An Espanso package with a variety of Matches for interacting with Templater, a Community Plugin for Obsidian.md."
+package_version: "0.0.1"
+package_author: "4lch4"
+package_repo: "https://github.com/4lch4-Industries/Templater-Matches"
 ---
-A simple package to say "Hello World"
+
+This package contains a variety of Matches to make working with the Templater plugin a bit easier.
+
+## Temp
