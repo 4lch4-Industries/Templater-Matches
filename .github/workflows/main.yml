@@ -10,7 +10,7 @@ jobs:
 
       - name: Hello world action step
         id: hello
-        uses: 4lch4/Espanso-Validator@v0.0.21
+        uses: 4lch4/Espanso-Validator@v0.0.22
 
       # Use the output from the `hello` step
       - name: Get the output time
