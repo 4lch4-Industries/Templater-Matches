@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Testing Espanso Validator
     steps:
+      - name: Clone Repository
+        uses: actions/checkout@v2
+
       - name: Hello world action step
         id: hello
         uses: 4lch4/Espanso-Validator@v0.0.7
