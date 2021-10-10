@@ -7,12 +7,10 @@ jobs:
     steps:
       - name: Clone Repository
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
 
       - name: Hello world action step
         id: hello
-        uses: 4lch4/Espanso-Validator@v0.0.12
+        uses: 4lch4/Espanso-Validator@v0.0.13
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
